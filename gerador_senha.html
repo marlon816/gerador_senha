@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  
+    <div class="botoes">
+        <button id="classico">clássico</button>
+        <button id="noite">noite</button>
+        <button id="modo_binario">binario</button>
+   </div> 
+
+    <form class="formulario">
+        <h1>Gerador de senhar</h1>
+
+        <label for="senha">Digete texto</label>
+        <input type="text" placeholder="digete o texto" id="senha">
+        
+        <div class="senha_botao">
+            <input type="number" id="numero_caractere" min="0">
+            <button type="submit" id="senha_aleatoria_forte">gerar senha aleatoria forte</button>
+            <input type="number" id="numero_caractere_2" min="0">
+            <button type="submit" id="senha_aleatoria_forte_super">gerar senha aleatoria super forte</button>
+            
+            <button type="submit" id="hexadecimal">gerar hexadecimal</button>
+            <button type="submit" id="b2">gerar binario</button>
+            <button type="submit" id="octagonal">gerar octagonal</button>
+            
+            <button type="submit" id="morse">gerar morse</button>
+            <button type="submit" id="recarrega">recarrega a página</button>
+        </div>
+        
+    </form>
+    <div class="tela_criptografia">
+       <div class="criptografia"> 
+        
+       </div>
+    </div>
+
+    <!-- <script type="module" src="js/binario.js"></script> -->
+    <script  type="module" src="js/import.js"></script>
+</body>
+</html>

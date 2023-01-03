@@ -1,0 +1,341 @@
+$cor_classica:antiquewhite;
+$cor_classica_input:snow;
+$cor_classica_input_hover:rgb(244, 214, 174);
+
+$cor_noite:rgb(34, 33, 33);
+$cor_noite_input:rgb(255, 255, 255);
+$cor_noite_input_hover:gray;
+
+$cor_binario_1:rgb(0, 0, 0);
+$cor_binario_2:#00FF00;
+$cor_binario_3:white;
+
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+   display: grid;
+   grid-template-columns:200px 600px 500px;
+   
+}
+
+.formulario,input,button{
+    display: block;
+    margin:20px 10px;
+}
+.formulario{
+    background-color:$cor_classica;
+    padding: 30px;
+}
+
+.formulario input{
+    margin-left: 100px;
+    border:none;
+    width:60%;
+    height: 30px;
+    outline: 1px solid $cor_classica_input;
+    
+}
+.formulario input:hover{
+    outline: 1px solid $cor_classica_input_hover;
+}
+.senha_botao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+.senha_botao button{
+    width: 80%;
+    height: 30px;   
+}
+
+.tela_criptografia{
+   border:1px solid $cor_classica; 
+   display: grid;
+   
+}
+
+
+.botoes button{
+ width: 180px;
+ height: 25px;
+
+}
+
+
+
+/*modo noturno*/
+
+body.noite{
+    background-color: black;
+    
+ }
+
+.tela_criptografia.noite{
+    font-size:16px;
+    color:white;
+    border:1px solid $cor_noite; 
+    display: grid;
+    
+ }
+
+ .formulario.noite{
+    background-color:$cor_noite_input;
+    color:white;
+    padding: 30px;
+    background-image: url(../img/estrela.png);
+}
+
+.formulario.noite button{
+    background: none;
+    border: 1px solid white;
+    font-size: 16px;
+    height: 45px;
+    color:white;
+}
+
+.formulario input.noite{
+    margin-left: 100px;
+    border:none;
+    width:60%;
+    height: 30px;
+    outline: 1px solid $cor_noite_input;
+    background-color: $cor_noite_input;
+    
+}
+.formulario input:hover.noite{
+    outline: 1px solid $cor_noite_input_hover;
+}
+
+
+.botoes.noite button{
+    background: none;
+    border: 1px solid white;
+    color:white;
+   }
+
+
+   /*binario*/
+
+
+body.binario{
+    background-color: $cor_binario_1;
+    
+ }
+
+.tela_criptografia.binario{
+    font-size:16px;
+    color:$cor_binario_2;
+    border:1px solid $cor_binario_2; 
+    display: grid;
+    
+ }
+
+ .formulario.binario{
+    background-color:$cor_binario_1;
+    color:$cor_binario_2;
+    padding: 30px;
+    border: 1px solid $cor_binario_2;
+}
+
+.formulario.binario input{
+   background-color:black;
+   color:$cor_binario_2;
+}
+.formulario.binario input[type="text"]{
+    background-color:black;
+    color:$cor_binario_2;
+ }
+
+.formulario.binario button{
+    background: none;
+    border: 1px solid $cor_binario_2;
+    font-size: 16px;
+    height: 45px;
+    color:$cor_binario_2;
+}
+
+.formulario input.binario{
+    margin-left: 100px;
+    border:none;
+    width:60%;
+    height: 30px;
+    outline: 1px solid $cor_binario_2;
+    background-color: $cor_binario_3;
+    
+}
+.formulario input:hover.binario{
+    outline: 1px solid $cor_binario_3;
+}
+
+
+.botoes.binario button{
+    background: none;
+    border: 1px solid $cor_binario_2;
+    color:$cor_binario_2;
+   }
+
+
+/*mobile*/
+
+@media(max-width:1200px){
+    
+    body{
+        display: grid;
+        grid-template-columns:1fr;
+        
+     }
+     
+     .formulario,input,button{
+         display: block;
+         margin:20px 10px;
+     }
+     .formulario{
+         background-color:$cor_classica;
+         padding: 30px;
+     }
+     
+     .formulario input{
+         margin-left: 100px;
+         border:none;
+         width:60%;
+         height: 30px;
+         outline: 1px solid $cor_classica_input;
+         
+     }
+     .formulario input:hover{
+         outline: 1px solid $cor_classica_input_hover;
+     }
+     .senha_botao{
+         display: grid;
+         grid-template-columns: 1fr 1fr;    
+     }
+     .senha_botao button{
+         width: 80%;
+         height: 30px;   
+     }
+     
+     .tela_criptografia{
+        margin-top: 70px;
+        border:1px solid $cor_classica; 
+    
+        
+     }
+     
+     
+     .botoes button{
+      width: 180px;
+      height: 25px;
+     
+     }
+}
+
+
+
+@media(max-width:700px){
+    
+    body{
+        display: grid;
+        grid-template-columns:1fr;
+        
+     }
+     
+     .formulario,input,button{
+         display: block;
+         margin:20px 10px;
+     }
+     .formulario{
+         background-color:$cor_classica;
+         padding: 0px;
+     }
+     
+     .formulario input{
+         margin-left: 100px;
+         border:none;
+         width:60%;
+         height: 30px;
+         outline: 1px solid $cor_classica_input;
+         
+     }
+     .formulario input:hover{
+         outline: 1px solid $cor_classica_input_hover;
+     }
+     .senha_botao{
+         display: grid;
+         grid-template-columns: 1fr;    
+     }
+     .senha_botao button{
+         width: 60%;
+         margin:10px auto;
+         height: 30px;   
+     }
+     
+     .tela_criptografia{
+        margin-top: 70px;
+        border:1px solid $cor_classica; 
+    
+        
+     }
+     
+     
+     .botoes button{
+      width: 180px;
+      height: 25px;
+     
+     }
+}
+
+
+
+@media(max-width:500px){
+    
+    body{
+        display: grid;
+        grid-template-columns:1fr;
+        
+     }
+     
+     .formulario,input,button{
+         display: block;
+         margin:20px 10px;
+     }
+     .formulario{
+         background-color:$cor_classica;
+         padding: 0px;
+     }
+     
+     .formulario input{
+         margin-left: 10px;
+         border:none;
+         width:60%;
+         height: 30px;
+         outline: 1px solid $cor_classica_input;
+         
+     }
+     .formulario input:hover{
+         outline: 1px solid $cor_classica_input_hover;
+     }
+     .senha_botao{
+         display: grid;
+         grid-template-columns: 1fr;    
+     }
+     .senha_botao button{
+         width: 60%;
+         padding: 10px;
+         height: 50px;   
+     }
+     
+     .tela_criptografia{
+        margin-top: 70px;
+        border:1px solid $cor_classica; 
+    
+        
+     }
+     
+     
+     .botoes button{
+      width: 180px;
+      height: 25px;
+     
+     }
+}
